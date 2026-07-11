@@ -1,0 +1,211 @@
+2026-07-04 18:40:55.722 | INFO     | api.main:lifespan:62 - FinSight API starting up...
+2026-07-04 18:40:55.722 | INFO     | api.main:lifespan:62 - FinSight API starting up...
+2026-07-04 18:40:55.726 | INFO     | config_loader:get_config:50 - Config loaded from C:\Users\Utkarsh Gupta\Downloads\FinSight\backend\configs\config.yaml
+2026-07-04 18:41:03.350 | INFO     | src.retrieval.hybrid_retriever:__init__:55 - ChromaDB collection 'finsight_docs' loaded (0 existing chunks)
+2026-07-04 18:41:03.357 | INFO     | src.retrieval.hybrid_retriever:__init__:55 - ChromaDB collection 'finsight_docs' loaded (0 existing chunks)
+2026-07-04 18:41:21.421 | INFO     | api.main:lifespan:62 - FinSight API starting up...
+2026-07-04 18:41:21.426 | INFO     | config_loader:get_config:50 - Config loaded from C:\Users\Utkarsh Gupta\Downloads\FinSight\backend\configs\config.yaml
+2026-07-04 18:41:30.041 | INFO     | src.retrieval.hybrid_retriever:__init__:55 - ChromaDB collection 'finsight_docs' loaded (0 existing chunks)
+2026-07-04 18:41:41.044 | INFO     | src.retrieval.hybrid_retriever:__init__:66 - CrossEncoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-07-04 18:41:42.179 | INFO     | src.retrieval.hybrid_retriever:__init__:66 - CrossEncoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-07-04 18:41:55.831 | INFO     | api.main:lifespan:62 - FinSight API starting up...
+2026-07-04 18:41:55.836 | INFO     | config_loader:get_config:50 - Config loaded from C:\Users\Utkarsh Gupta\Downloads\FinSight\backend\configs\config.yaml
+2026-07-04 18:42:03.810 | INFO     | src.retrieval.hybrid_retriever:__init__:55 - ChromaDB collection 'finsight_docs' loaded (0 existing chunks)
+2026-07-04 18:42:06.239 | INFO     | src.retrieval.hybrid_retriever:__init__:66 - CrossEncoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-07-04 18:42:13.290 | INFO     | src.retrieval.hybrid_retriever:__init__:66 - CrossEncoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-07-04 18:42:21.336 | INFO     | api.main:lifespan:62 - FinSight API starting up...
+2026-07-04 18:42:21.342 | INFO     | config_loader:get_config:50 - Config loaded from C:\Users\Utkarsh Gupta\Downloads\FinSight\backend\configs\config.yaml
+2026-07-04 18:42:28.413 | INFO     | src.retrieval.hybrid_retriever:__init__:55 - ChromaDB collection 'finsight_docs' loaded (0 existing chunks)
+2026-07-04 18:42:37.772 | INFO     | src.retrieval.hybrid_retriever:__init__:66 - CrossEncoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-07-04 18:43:33.259 | INFO     | api.main:lifespan:62 - FinSight API starting up...
+2026-07-04 18:43:33.262 | INFO     | config_loader:get_config:50 - Config loaded from C:\Users\Utkarsh Gupta\Downloads\FinSight\backend\configs\config.yaml
+2026-07-04 18:43:39.631 | INFO     | src.retrieval.hybrid_retriever:__init__:55 - ChromaDB collection 'finsight_docs' loaded (0 existing chunks)
+2026-07-04 18:43:47.644 | INFO     | src.retrieval.hybrid_retriever:__init__:66 - CrossEncoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-07-04 18:43:48.127 | INFO     | src.qa.pipeline:__init__:60 - QAPipeline initialised with model: llama3-8b-8192
+2026-07-04 18:43:48.127 | INFO     | api.main:lifespan:71 - FinSight API ready ✓
+2026-07-05 00:10:51.502 | INFO     | api.main:lifespan:62 - FinSight API starting up...
+2026-07-05 00:10:51.508 | INFO     | config_loader:get_config:50 - Config loaded from C:\Users\Utkarsh Gupta\Downloads\FinSight\backend\configs\config.yaml
+2026-07-05 00:10:57.896 | INFO     | src.retrieval.hybrid_retriever:__init__:55 - ChromaDB collection 'finsight_docs' loaded (0 existing chunks)
+2026-07-05 00:11:05.526 | INFO     | src.retrieval.hybrid_retriever:__init__:66 - CrossEncoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-07-05 00:11:06.091 | INFO     | src.qa.pipeline:__init__:60 - QAPipeline initialised with model: llama3-8b-8192
+2026-07-05 00:11:06.092 | INFO     | api.main:lifespan:71 - FinSight API ready ✓
+2026-07-05 12:53:58.055 | INFO     | api.main:lifespan:62 - FinSight API starting up...
+2026-07-05 12:53:58.062 | INFO     | config_loader:get_config:50 - Config loaded from C:\Users\Utkarsh Gupta\Downloads\FinSight\backend\configs\config.yaml
+2026-07-05 12:54:05.057 | INFO     | src.retrieval.hybrid_retriever:__init__:55 - ChromaDB collection 'finsight_docs' loaded (0 existing chunks)
+2026-07-05 12:54:14.605 | INFO     | src.retrieval.hybrid_retriever:__init__:66 - CrossEncoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-07-05 12:54:15.079 | INFO     | src.qa.pipeline:__init__:60 - QAPipeline initialised with model: llama3-8b-8192
+2026-07-05 12:54:15.080 | INFO     | api.main:lifespan:71 - FinSight API ready ✓
+2026-07-11 17:00:39.956 | INFO     | api.main:lifespan:62 - FinSight API starting up...
+2026-07-11 17:00:39.962 | INFO     | config_loader:get_config:50 - Config loaded from C:\Users\Utkarsh Gupta\Downloads\FinSight\backend\configs\config.yaml
+2026-07-11 17:00:47.844 | INFO     | src.retrieval.hybrid_retriever:__init__:55 - ChromaDB collection 'finsight_docs' loaded (0 existing chunks)
+2026-07-11 17:00:56.060 | INFO     | src.retrieval.hybrid_retriever:__init__:66 - CrossEncoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-07-11 17:00:56.603 | INFO     | src.qa.pipeline:__init__:60 - QAPipeline initialised with model: llama3-8b-8192
+2026-07-11 17:00:56.603 | INFO     | api.main:lifespan:71 - FinSight API ready ✓
+2026-07-11 17:01:46.586 | INFO     | api.routes.upload:upload_document:98 - Saved PDF: uploads\6d077b11-9eae-4b4c-92df-057d19b89c5b.pdf (14,043 bytes)
+2026-07-11 17:01:46.629 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 1: 2348 chars extracted
+2026-07-11 17:01:46.631 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 2: 598 chars extracted
+2026-07-11 17:01:46.633 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 3: 1541 chars extracted
+2026-07-11 17:01:46.635 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 4: 2721 chars extracted
+2026-07-11 17:01:46.636 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 5: 589 chars extracted
+2026-07-11 17:01:46.637 | INFO     | src.ingestion.parser:extract_pages:64 - Extracted text from 5 pages in uploads\6d077b11-9eae-4b4c-92df-057d19b89c5b.pdf
+2026-07-11 17:01:46.754 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 0: 305 chars
+2026-07-11 17:01:46.754 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 1: 367 chars
+2026-07-11 17:01:46.786 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 0: 155 chars
+2026-07-11 17:01:46.787 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 1: 355 chars
+2026-07-11 17:01:47.194 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 0: 976 chars
+2026-07-11 17:01:47.195 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 1: 560 chars
+2026-07-11 17:01:47.330 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 0: 412 chars
+2026-07-11 17:01:47.330 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 1: 399 chars
+2026-07-11 17:01:47.362 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 5, table 0: 513 chars
+2026-07-11 17:01:47.363 | INFO     | src.ingestion.parser:extract_tables:131 - Extracted 9 tables from uploads\6d077b11-9eae-4b4c-92df-057d19b89c5b.pdf
+2026-07-11 17:01:47.363 | INFO     | src.ingestion.parser:ingest:295 - Ingestion complete for document_id=6d077b11-9eae-4b4c-92df-057d19b89c5b: 14 chunks (5 text pages, 9 tables)
+2026-07-11 17:01:48.201 | INFO     | src.retrieval.hybrid_retriever:index_document:101 - Indexed 14 chunks into ChromaDB for document_id=6d077b11-9eae-4b4c-92df-057d19b89c5b
+2026-07-11 17:01:48.204 | INFO     | src.retrieval.hybrid_retriever:index_document:106 - BM25 index built for document_id=6d077b11-9eae-4b4c-92df-057d19b89c5b (14 chunks)
+2026-07-11 17:01:48.205 | INFO     | api.routes.upload:upload_document:154 - Document indexed: document_id=6d077b11-9eae-4b4c-92df-057d19b89c5b | NovaTech Q3 2024 | 14 chunks
+2026-07-11 17:02:04.379 | INFO     | api.routes.upload:upload_document:98 - Saved PDF: uploads\84e6602a-a57c-4dcf-bbfe-af7e882ad88c.pdf (14,043 bytes)
+2026-07-11 17:02:04.390 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 1: 2348 chars extracted
+2026-07-11 17:02:04.392 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 2: 598 chars extracted
+2026-07-11 17:02:04.394 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 3: 1541 chars extracted
+2026-07-11 17:02:04.397 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 4: 2721 chars extracted
+2026-07-11 17:02:04.398 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 5: 589 chars extracted
+2026-07-11 17:02:04.398 | INFO     | src.ingestion.parser:extract_pages:64 - Extracted text from 5 pages in uploads\84e6602a-a57c-4dcf-bbfe-af7e882ad88c.pdf
+2026-07-11 17:02:04.517 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 0: 305 chars
+2026-07-11 17:02:04.517 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 1: 367 chars
+2026-07-11 17:02:04.550 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 0: 155 chars
+2026-07-11 17:02:04.550 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 1: 355 chars
+2026-07-11 17:02:04.644 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 0: 976 chars
+2026-07-11 17:02:04.645 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 1: 560 chars
+2026-07-11 17:02:04.771 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 0: 412 chars
+2026-07-11 17:02:04.771 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 1: 399 chars
+2026-07-11 17:02:04.796 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 5, table 0: 513 chars
+2026-07-11 17:02:04.797 | INFO     | src.ingestion.parser:extract_tables:131 - Extracted 9 tables from uploads\84e6602a-a57c-4dcf-bbfe-af7e882ad88c.pdf
+2026-07-11 17:02:04.797 | INFO     | src.ingestion.parser:ingest:295 - Ingestion complete for document_id=84e6602a-a57c-4dcf-bbfe-af7e882ad88c: 14 chunks (5 text pages, 9 tables)
+2026-07-11 17:02:05.348 | INFO     | src.retrieval.hybrid_retriever:index_document:101 - Indexed 14 chunks into ChromaDB for document_id=84e6602a-a57c-4dcf-bbfe-af7e882ad88c
+2026-07-11 17:02:05.350 | INFO     | src.retrieval.hybrid_retriever:index_document:106 - BM25 index built for document_id=84e6602a-a57c-4dcf-bbfe-af7e882ad88c (14 chunks)
+2026-07-11 17:02:05.350 | INFO     | api.routes.upload:upload_document:154 - Document indexed: document_id=84e6602a-a57c-4dcf-bbfe-af7e882ad88c | NovaTech Q3 2024 | 14 chunks
+2026-07-11 17:05:32.360 | INFO     | api.routes.upload:upload_document:98 - Saved PDF: uploads\4afa0675-d8f0-40dd-a59c-901bcf9bd0f1.pdf (14,043 bytes)
+2026-07-11 17:05:32.369 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 1: 2348 chars extracted
+2026-07-11 17:05:32.370 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 2: 598 chars extracted
+2026-07-11 17:05:32.372 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 3: 1541 chars extracted
+2026-07-11 17:05:32.374 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 4: 2721 chars extracted
+2026-07-11 17:05:32.375 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 5: 589 chars extracted
+2026-07-11 17:05:32.375 | INFO     | src.ingestion.parser:extract_pages:64 - Extracted text from 5 pages in uploads\4afa0675-d8f0-40dd-a59c-901bcf9bd0f1.pdf
+2026-07-11 17:05:32.487 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 0: 305 chars
+2026-07-11 17:05:32.488 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 1: 367 chars
+2026-07-11 17:05:32.517 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 0: 155 chars
+2026-07-11 17:05:32.518 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 1: 355 chars
+2026-07-11 17:05:32.636 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 0: 976 chars
+2026-07-11 17:05:32.636 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 1: 560 chars
+2026-07-11 17:05:32.762 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 0: 412 chars
+2026-07-11 17:05:32.762 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 1: 399 chars
+2026-07-11 17:05:32.788 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 5, table 0: 513 chars
+2026-07-11 17:05:32.788 | INFO     | src.ingestion.parser:extract_tables:131 - Extracted 9 tables from uploads\4afa0675-d8f0-40dd-a59c-901bcf9bd0f1.pdf
+2026-07-11 17:05:32.789 | INFO     | src.ingestion.parser:ingest:295 - Ingestion complete for document_id=4afa0675-d8f0-40dd-a59c-901bcf9bd0f1: 14 chunks (5 text pages, 9 tables)
+2026-07-11 17:05:33.439 | INFO     | src.retrieval.hybrid_retriever:index_document:101 - Indexed 14 chunks into ChromaDB for document_id=4afa0675-d8f0-40dd-a59c-901bcf9bd0f1
+2026-07-11 17:05:33.441 | INFO     | src.retrieval.hybrid_retriever:index_document:106 - BM25 index built for document_id=4afa0675-d8f0-40dd-a59c-901bcf9bd0f1 (14 chunks)
+2026-07-11 17:05:33.442 | INFO     | api.routes.upload:upload_document:154 - Document indexed: document_id=4afa0675-d8f0-40dd-a59c-901bcf9bd0f1 | NovaTech Q3 2024 | 14 chunks
+2026-07-11 17:07:23.506 | INFO     | api.routes.upload:upload_document:98 - Saved PDF: uploads\9d1b997f-7e83-40cf-bfbd-e98bd820299f.pdf (14,043 bytes)
+2026-07-11 17:07:23.513 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 1: 2348 chars extracted
+2026-07-11 17:07:23.515 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 2: 598 chars extracted
+2026-07-11 17:07:23.516 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 3: 1541 chars extracted
+2026-07-11 17:07:23.518 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 4: 2721 chars extracted
+2026-07-11 17:07:23.519 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 5: 589 chars extracted
+2026-07-11 17:07:23.519 | INFO     | src.ingestion.parser:extract_pages:64 - Extracted text from 5 pages in uploads\9d1b997f-7e83-40cf-bfbd-e98bd820299f.pdf
+2026-07-11 17:07:23.617 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 0: 305 chars
+2026-07-11 17:07:23.617 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 1: 367 chars
+2026-07-11 17:07:23.655 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 0: 155 chars
+2026-07-11 17:07:23.655 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 1: 355 chars
+2026-07-11 17:07:23.744 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 0: 976 chars
+2026-07-11 17:07:23.744 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 1: 560 chars
+2026-07-11 17:07:23.860 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 0: 412 chars
+2026-07-11 17:07:23.860 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 1: 399 chars
+2026-07-11 17:07:23.887 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 5, table 0: 513 chars
+2026-07-11 17:07:23.887 | INFO     | src.ingestion.parser:extract_tables:131 - Extracted 9 tables from uploads\9d1b997f-7e83-40cf-bfbd-e98bd820299f.pdf
+2026-07-11 17:07:23.888 | INFO     | src.ingestion.parser:ingest:295 - Ingestion complete for document_id=9d1b997f-7e83-40cf-bfbd-e98bd820299f: 14 chunks (5 text pages, 9 tables)
+2026-07-11 17:07:24.483 | INFO     | src.retrieval.hybrid_retriever:index_document:101 - Indexed 14 chunks into ChromaDB for document_id=9d1b997f-7e83-40cf-bfbd-e98bd820299f
+2026-07-11 17:07:24.485 | INFO     | src.retrieval.hybrid_retriever:index_document:106 - BM25 index built for document_id=9d1b997f-7e83-40cf-bfbd-e98bd820299f (14 chunks)
+2026-07-11 17:07:24.485 | INFO     | api.routes.upload:upload_document:154 - Document indexed: document_id=9d1b997f-7e83-40cf-bfbd-e98bd820299f | NovaTech Q3 2024 | 14 chunks
+2026-07-11 17:12:15.776 | INFO     | api.routes.upload:upload_document:98 - Saved PDF: uploads\b41da579-b502-4ab0-b643-441d8fb0806d.pdf (14,043 bytes)
+2026-07-11 17:12:15.784 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 1: 2348 chars extracted
+2026-07-11 17:12:15.785 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 2: 598 chars extracted
+2026-07-11 17:12:15.786 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 3: 1541 chars extracted
+2026-07-11 17:12:15.788 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 4: 2721 chars extracted
+2026-07-11 17:12:15.788 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 5: 589 chars extracted
+2026-07-11 17:12:15.789 | INFO     | src.ingestion.parser:extract_pages:64 - Extracted text from 5 pages in uploads\b41da579-b502-4ab0-b643-441d8fb0806d.pdf
+2026-07-11 17:12:15.875 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 0: 305 chars
+2026-07-11 17:12:15.875 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 1: 367 chars
+2026-07-11 17:12:15.901 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 0: 155 chars
+2026-07-11 17:12:15.901 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 1: 355 chars
+2026-07-11 17:12:16.004 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 0: 976 chars
+2026-07-11 17:12:16.004 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 1: 560 chars
+2026-07-11 17:12:16.129 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 0: 412 chars
+2026-07-11 17:12:16.129 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 1: 399 chars
+2026-07-11 17:12:16.160 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 5, table 0: 513 chars
+2026-07-11 17:12:16.161 | INFO     | src.ingestion.parser:extract_tables:131 - Extracted 9 tables from uploads\b41da579-b502-4ab0-b643-441d8fb0806d.pdf
+2026-07-11 17:12:16.161 | INFO     | src.ingestion.parser:ingest:295 - Ingestion complete for document_id=b41da579-b502-4ab0-b643-441d8fb0806d: 14 chunks (5 text pages, 9 tables)
+2026-07-11 17:12:16.700 | INFO     | src.retrieval.hybrid_retriever:index_document:101 - Indexed 14 chunks into ChromaDB for document_id=b41da579-b502-4ab0-b643-441d8fb0806d
+2026-07-11 17:12:16.701 | INFO     | src.retrieval.hybrid_retriever:index_document:106 - BM25 index built for document_id=b41da579-b502-4ab0-b643-441d8fb0806d (14 chunks)
+2026-07-11 17:12:16.702 | INFO     | api.routes.upload:upload_document:154 - Document indexed: document_id=b41da579-b502-4ab0-b643-441d8fb0806d | NovaTech Q3 2024 | 14 chunks
+2026-07-11 17:16:11.339 | INFO     | api.routes.upload:upload_document:98 - Saved PDF: uploads\26fe89ad-d052-4f07-8e0f-d5bc6dd30b5f.pdf (14,043 bytes)
+2026-07-11 17:16:11.348 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 1: 2348 chars extracted
+2026-07-11 17:16:11.350 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 2: 598 chars extracted
+2026-07-11 17:16:11.352 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 3: 1541 chars extracted
+2026-07-11 17:16:11.354 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 4: 2721 chars extracted
+2026-07-11 17:16:11.355 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 5: 589 chars extracted
+2026-07-11 17:16:11.355 | INFO     | src.ingestion.parser:extract_pages:64 - Extracted text from 5 pages in uploads\26fe89ad-d052-4f07-8e0f-d5bc6dd30b5f.pdf
+2026-07-11 17:16:11.451 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 0: 305 chars
+2026-07-11 17:16:11.451 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 1: 367 chars
+2026-07-11 17:16:11.482 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 0: 155 chars
+2026-07-11 17:16:11.483 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 1: 355 chars
+2026-07-11 17:16:11.579 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 0: 976 chars
+2026-07-11 17:16:11.579 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 1: 560 chars
+2026-07-11 17:16:11.695 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 0: 412 chars
+2026-07-11 17:16:11.696 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 1: 399 chars
+2026-07-11 17:16:11.726 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 5, table 0: 513 chars
+2026-07-11 17:16:11.727 | INFO     | src.ingestion.parser:extract_tables:131 - Extracted 9 tables from uploads\26fe89ad-d052-4f07-8e0f-d5bc6dd30b5f.pdf
+2026-07-11 17:16:11.727 | INFO     | src.ingestion.parser:ingest:295 - Ingestion complete for document_id=26fe89ad-d052-4f07-8e0f-d5bc6dd30b5f: 14 chunks (5 text pages, 9 tables)
+2026-07-11 17:16:12.378 | INFO     | src.retrieval.hybrid_retriever:index_document:101 - Indexed 14 chunks into ChromaDB for document_id=26fe89ad-d052-4f07-8e0f-d5bc6dd30b5f
+2026-07-11 17:16:12.380 | INFO     | src.retrieval.hybrid_retriever:index_document:106 - BM25 index built for document_id=26fe89ad-d052-4f07-8e0f-d5bc6dd30b5f (14 chunks)
+2026-07-11 17:16:12.381 | INFO     | api.routes.upload:upload_document:154 - Document indexed: document_id=26fe89ad-d052-4f07-8e0f-d5bc6dd30b5f | NovaTech Q3 2024 | 14 chunks
+2026-07-11 17:16:48.016 | INFO     | api.routes.upload:upload_document:98 - Saved PDF: uploads\40422414-fb52-44e4-bee3-ac2dc374b3e3.pdf (14,043 bytes)
+2026-07-11 17:16:48.029 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 1: 2348 chars extracted
+2026-07-11 17:16:48.031 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 2: 598 chars extracted
+2026-07-11 17:16:48.032 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 3: 1541 chars extracted
+2026-07-11 17:16:48.035 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 4: 2721 chars extracted
+2026-07-11 17:16:48.036 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 5: 589 chars extracted
+2026-07-11 17:16:48.036 | INFO     | src.ingestion.parser:extract_pages:64 - Extracted text from 5 pages in uploads\40422414-fb52-44e4-bee3-ac2dc374b3e3.pdf
+2026-07-11 17:16:48.164 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 0: 305 chars
+2026-07-11 17:16:48.164 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 1: 367 chars
+2026-07-11 17:16:48.199 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 0: 155 chars
+2026-07-11 17:16:48.200 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 1: 355 chars
+2026-07-11 17:16:48.789 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 0: 976 chars
+2026-07-11 17:16:48.789 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 1: 560 chars
+2026-07-11 17:16:48.900 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 0: 412 chars
+2026-07-11 17:16:48.901 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 1: 399 chars
+2026-07-11 17:16:48.935 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 5, table 0: 513 chars
+2026-07-11 17:16:48.936 | INFO     | src.ingestion.parser:extract_tables:131 - Extracted 9 tables from uploads\40422414-fb52-44e4-bee3-ac2dc374b3e3.pdf
+2026-07-11 17:16:48.936 | INFO     | src.ingestion.parser:ingest:295 - Ingestion complete for document_id=40422414-fb52-44e4-bee3-ac2dc374b3e3: 14 chunks (5 text pages, 9 tables)
+2026-07-11 17:16:49.550 | INFO     | src.retrieval.hybrid_retriever:index_document:101 - Indexed 14 chunks into ChromaDB for document_id=40422414-fb52-44e4-bee3-ac2dc374b3e3
+2026-07-11 17:16:49.551 | INFO     | src.retrieval.hybrid_retriever:index_document:106 - BM25 index built for document_id=40422414-fb52-44e4-bee3-ac2dc374b3e3 (14 chunks)
+2026-07-11 17:16:49.552 | INFO     | api.routes.upload:upload_document:154 - Document indexed: document_id=40422414-fb52-44e4-bee3-ac2dc374b3e3 | NovaTech Q3 2024 | 14 chunks
+2026-07-11 17:17:36.918 | INFO     | api.routes.upload:upload_document:98 - Saved PDF: uploads\5bac4ee6-f78e-4140-ae66-e0421672979c.pdf (14,043 bytes)
+2026-07-11 17:17:36.931 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 1: 2348 chars extracted
+2026-07-11 17:17:36.932 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 2: 598 chars extracted
+2026-07-11 17:17:36.933 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 3: 1541 chars extracted
+2026-07-11 17:17:36.936 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 4: 2721 chars extracted
+2026-07-11 17:17:36.937 | DEBUG    | src.ingestion.parser:extract_pages:61 - Page 5: 589 chars extracted
+2026-07-11 17:17:36.937 | INFO     | src.ingestion.parser:extract_pages:64 - Extracted text from 5 pages in uploads\5bac4ee6-f78e-4140-ae66-e0421672979c.pdf
+2026-07-11 17:17:37.063 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 0: 305 chars
+2026-07-11 17:17:37.063 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 1, table 1: 367 chars
+2026-07-11 17:17:37.106 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 0: 155 chars
+2026-07-11 17:17:37.106 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 2, table 1: 355 chars
+2026-07-11 17:17:37.235 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 0: 976 chars
+2026-07-11 17:17:37.235 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 3, table 1: 560 chars
+2026-07-11 17:17:37.365 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 0: 412 chars
+2026-07-11 17:17:37.365 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 4, table 1: 399 chars
+2026-07-11 17:17:37.400 | DEBUG    | src.ingestion.parser:extract_tables:129 - Page 5, table 0: 513 chars
+2026-07-11 17:17:37.400 | INFO     | src.ingestion.parser:extract_tables:131 - Extracted 9 tables from uploads\5bac4ee6-f78e-4140-ae66-e0421672979c.pdf
+2026-07-11 17:17:37.400 | INFO     | src.ingestion.parser:ingest:295 - Ingestion complete for document_id=5bac4ee6-f78e-4140-ae66-e0421672979c: 14 chunks (5 text pages, 9 tables)
+2026-07-11 17:17:38.079 | INFO     | src.retrieval.hybrid_retriever:index_document:101 - Indexed 14 chunks into ChromaDB for document_id=5bac4ee6-f78e-4140-ae66-e0421672979c
+2026-07-11 17:17:38.081 | INFO     | src.retrieval.hybrid_retriever:index_document:106 - BM25 index built for document_id=5bac4ee6-f78e-4140-ae66-e0421672979c (14 chunks)
+2026-07-11 17:17:38.081 | INFO     | api.routes.upload:upload_document:154 - Document indexed: document_id=5bac4ee6-f78e-4140-ae66-e0421672979c | NovaTech Q3 2024 | 14 chunks

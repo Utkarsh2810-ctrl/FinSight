@@ -1,0 +1,36 @@
+ingestion:
+  chunk_size: 512          # tokens (approx chars/4)
+  chunk_overlap: 64        # sliding window overlap
+
+retrieval:
+  embedding_model: "all-MiniLM-L6-v2"
+  reranker_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  top_k: 20                # candidates pulled from dense + sparse each
+  rerank_top_n: 5          # final chunks passed to QA
+  rrf_k: 60                # RRF damping constant (Cormack et al. 2009 default)
+  chroma_collection: "finsight_docs"
+  chroma_persist_dir: "./chroma_db"
+
+qa:
+  groq_model: "llama3-8b-8192"
+  max_tokens: 1024
+  temperature: 0.1         # low temp for factual financial answers
+
+forecasting:
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.2
+  seq_len: 8               # quarters of lookback
+  epochs: 100
+  batch_size: 16
+  lr: 0.001
+  grad_clip: 1.0           # clips exploding gradients — critical for LSTM stability
+  early_stopping_patience: 15
+  train_val_split: 0.8
+  features:
+    - "Total Revenue"
+    - "Gross Profit"
+    - "Operating Income"
+    - "Net Income"
+    - "EBITDA"
+  checkpoint_dir: "./checkpoints"
