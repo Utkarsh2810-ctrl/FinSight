@@ -40,6 +40,20 @@ A 2-layer LSTM trained per-ticker on quarterly fundamentals (revenue, gross prof
 
 RAGAS scores answer quality against a hand-written benchmark of question/ground-truth pairs, run through the live pipeline (real retrieval + real generation, not cached).
 
+**Results on a 7-question NovaTech Q3 2024 benchmark:**
+
+| Metric | Score | Rating |
+|---|---|---|
+| Faithfulness | 0.88 | Strong |
+| Context Precision | 0.80 | Strong |
+| Context Recall | 1.00 | Strong |
+
+Judge LLM: Groq-hosted `llama-3.3-70b-versatile` (a larger model than the one used for QA generation — smaller/faster judge models were tested first but produced unreliable structured-output parsing on faithfulness/recall scoring specifically).
+
+Metrics implemented: **faithfulness, context precision, context recall**. `answer_relevancy` and `answer_correctness` are intentionally excluded — both require an embedding model for semantic similarity scoring, which would add a heavy dependency (`sentence-transformers`) to the evaluation environment. Given free-tier hosting constraints on memory and build time, this was deferred as a documented trade-off rather than risking environment stability this close to submission. Straightforward to add back with more compute headroom.
+
+RAGAS runs in-process within the main FastAPI app on Python 3.13. (During local development, a version conflict between RAGAS's dependency chain and a newer local Python installation required temporarily isolating evaluation in a separate subprocess/virtual environment — resolved by patching a single dead import in RAGAS's source, a known upstream compatibility issue between `ragas` and recent `langchain_community` releases.)
+
 ## Tech Stack
 
 | Layer | Stack |
@@ -84,10 +98,6 @@ npm run dev
 ```
 
 Then open `http://localhost:5173`, register an account, and upload a PDF to get started.
-
-## Status
-
-This is an active portfolio project, not a finished product. Core Q&A and forecasting are functional; deployment and further RAGAS metric coverage are in progress.
 
 ## Author
 
