@@ -157,3 +157,28 @@ async def upload_document(
     )
 
     return UploadResponse(**doc_entry)
+
+
+@router.delete("/documents/{document_id}")
+async def delete_document(document_id: str, request: Request):
+    """
+    Delete an indexed document from ChromaDB, BM25, document store, and PDF storage.
+    """
+    try:
+        request.app.state.retriever.delete_document(document_id)
+    except Exception as e:
+        logger.error(f"Failed to delete document from retriever: {e}")
+
+    if document_id in request.app.state.document_store:
+        del request.app.state.document_store[document_id]
+
+    file_path = UPLOAD_DIR / f"{document_id}.pdf"
+    if file_path.exists():
+        try:
+            file_path.unlink()
+        except Exception as e:
+            logger.error(f"Failed to delete PDF file {file_path}: {e}")
+
+    logger.info(f"Document deleted from FastAPI backend: {document_id}")
+    return {"status": "deleted", "document_id": document_id}
+

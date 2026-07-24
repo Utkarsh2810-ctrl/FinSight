@@ -159,10 +159,11 @@ def run_ragas_evaluation(
 
         # RAGAS uses LangChain under the hood; wrap Groq via langchain-groq
         groq_llm = ChatGroq(
-            model_name="llama3-8b-8192",
+            model_name="llama-3.1-8b-instant",
             groq_api_key=groq_api_key,
             temperature=0.0,
         )
+
         ragas_llm = LangchainLLM(groq_llm)
 
         for metric in [faithfulness, answer_relevancy, context_precision, context_recall]:

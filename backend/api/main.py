@@ -13,6 +13,7 @@ CORS is configured to allow the React dev server (localhost:5173).
 Update ALLOWED_ORIGINS for production deployment.
 """
 
+import os
 import sys
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -47,13 +48,16 @@ logger.add(
 Path("logs").mkdir(exist_ok=True)
 logger.add("logs/finsight.log", rotation="10 MB", retention="7 days", level="DEBUG")
 
-ALLOWED_ORIGINS = [
+_DEFAULT_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:5174",
     "http://localhost:3000",
     "http://127.0.0.1:5173",
     "http://127.0.0.1:5174",
 ]
+
+_env_origins = os.environ.get("ALLOWED_ORIGINS")
+ALLOWED_ORIGINS = [o.strip() for o in _env_origins.split(",") if o.strip()] if _env_origins else _DEFAULT_ORIGINS
 
 # ---------------------------------------------------------------------------
 # Lifespan

@@ -17,6 +17,8 @@ import { SkeletonCard, SkeletonChart } from '../components/Skeleton';
 import EmptyState from '../components/EmptyState';
 import CustomTooltip from '../components/CustomTooltip';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
 const formatRevenue = (value) => {
   if (value === null || value === undefined || Number.isNaN(value)) return '—';
   if (Math.abs(value) >= 1e9) return `$${(value / 1e9).toFixed(2)}B`;
@@ -78,7 +80,7 @@ const ForecastPage = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:8000/api/forecast',
+        `${API_URL}/api/forecast`,
         { ticker: ticker.trim() },
         {
           headers: {

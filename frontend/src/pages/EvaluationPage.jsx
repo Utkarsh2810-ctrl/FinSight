@@ -13,9 +13,10 @@ import {
 import { SkeletonCard, SkeletonChart } from '../components/Skeleton';
 import EmptyState from '../components/EmptyState';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
 const metricConfig = {
   faithfulness: { label: 'Faithfulness', icon: '🎯' },
-  answer_relevancy: { label: 'Answer Relevancy', icon: '💬' },
   context_precision: { label: 'Context Precision', icon: '🔬' },
   context_recall: { label: 'Context Recall', icon: '📋' }
 };
@@ -87,7 +88,6 @@ const EvaluationPage = () => {
     if (!result) return [];
     return [
       { metric: 'Faithfulness', value: Number(result.faithfulness) || 0, fullMark: 1 },
-      { metric: 'Answer Relevancy', value: Number(result.answer_relevancy) || 0, fullMark: 1 },
       { metric: 'Context Precision', value: Number(result.context_precision) || 0, fullMark: 1 },
       { metric: 'Context Recall', value: Number(result.context_recall) || 0, fullMark: 1 }
     ];
@@ -107,7 +107,7 @@ const EvaluationPage = () => {
     formData.append('file', file);
 
     try {
-      const response = await axios.post('http://localhost:8000/api/evaluate', formData, {
+      const response = await axios.post(`${API_URL}/api/evaluate`, formData, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -177,8 +177,7 @@ const EvaluationPage = () => {
         {/* Content */}
         {loading ? (
           <>
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-              <SkeletonCard />
+            <div className="grid gap-4 sm:grid-cols-3">
               <SkeletonCard />
               <SkeletonCard />
               <SkeletonCard />
@@ -188,8 +187,8 @@ const EvaluationPage = () => {
         ) : result ? (
           <>
             {/* Metric cards with circular gauges */}
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4 animate-fade-in">
-              {['faithfulness', 'answer_relevancy', 'context_precision', 'context_recall'].map((key) => {
+            <div className="grid gap-4 sm:grid-cols-3 animate-fade-in">
+              {['faithfulness', 'context_precision', 'context_recall'].map((key) => {
                 const value = Number(result[key] || 0);
                 const color = getScoreColor(value);
                 return (
@@ -271,7 +270,6 @@ const EvaluationPage = () => {
                       <th className="px-5 py-3 text-left text-xs font-medium uppercase tracking-wider text-slate-500">Answer</th>
                       <th className="px-5 py-3 text-left text-xs font-medium uppercase tracking-wider text-slate-500">Ground Truth</th>
                       <th className="px-5 py-3 text-center text-xs font-medium uppercase tracking-wider text-slate-500">Faith.</th>
-                      <th className="px-5 py-3 text-center text-xs font-medium uppercase tracking-wider text-slate-500">Relev.</th>
                       <th className="px-5 py-3 text-center text-xs font-medium uppercase tracking-wider text-slate-500">Prec.</th>
                       <th className="px-5 py-3 text-center text-xs font-medium uppercase tracking-wider text-slate-500">Recall</th>
                     </tr>
@@ -280,7 +278,6 @@ const EvaluationPage = () => {
                     {result.per_question?.map((row, index) => {
                       const scores = [
                         Number(row.faithfulness) || 0,
-                        Number(row.answer_relevancy) || 0,
                         Number(row.context_precision) || 0,
                         Number(row.context_recall) || 0
                       ];

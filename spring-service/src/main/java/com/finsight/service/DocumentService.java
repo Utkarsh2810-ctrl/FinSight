@@ -75,7 +75,16 @@ public class DocumentService {
                 ));
         documentRepository.delete(doc);
         log.info("Document deleted: {} by user {}", documentId, userEmail);
+
+        try {
+            org.springframework.web.client.RestTemplate restTemplate = new org.springframework.web.client.RestTemplate();
+            restTemplate.delete("http://localhost:8000/api/documents/" + documentId);
+            log.info("Notified FastAPI backend to delete vector index for document {}", documentId);
+        } catch (Exception e) {
+            log.warn("Could not notify FastAPI backend of document deletion for {}: {}", documentId, e.getMessage());
+        }
     }
+
 
     private DocumentResponse toResponse(Document doc) {
         return DocumentResponse.builder()

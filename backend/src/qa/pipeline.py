@@ -54,10 +54,12 @@ class QAPipeline:
 
         api_key = os.getenv("GROQ_API_KEY")
         if not api_key:
-            raise EnvironmentError("GROQ_API_KEY not set in environment / .env file")
+            logger.warning("GROQ_API_KEY not set in environment. QAPipeline initialized in retrieval-fallback mode.")
+            self._client = None
+        else:
+            self._client = Groq(api_key=api_key)
+            logger.info(f"QAPipeline initialised with model: {self._cfg['groq_model']}")
 
-        self._client = Groq(api_key=api_key)
-        logger.info(f"QAPipeline initialised with model: {self._cfg['groq_model']}")
 
     # ------------------------------------------------------------------
     # Context assembly  (✍️ write this yourself — it encodes your schema)
@@ -126,25 +128,6 @@ class QAPipeline:
             messages.extend(conversation_history)
         messages.append({"role": "user", "content": query})
 
-        t0 = time.monotonic()
-
-        response = self._client.chat.completions.create(
-            model=self._cfg["groq_model"],
-            messages=[{"role": "system", "content": system_prompt}] + messages,
-            max_tokens=self._cfg["max_tokens"],
-            temperature=self._cfg["temperature"],
-        )
-
-        latency_ms = int((time.monotonic() - t0) * 1000)
-        answer_text = response.choices[0].message.content.strip()
-
-        logger.info(
-            f"QA completed in {latency_ms}ms | "
-            f"model={self._cfg['groq_model']} | "
-            f"input_tokens={response.usage.prompt_tokens} | "
-            f"output_tokens={response.usage.completion_tokens}"
-        )
-
         # Strip heavy text from sources before returning to keep API response small
         sources = [
             {
@@ -159,6 +142,30 @@ class QAPipeline:
             }
             for c in chunks
         ]
+
+        if not self._client:
+            answer_text = (
+                "GROQ_API_KEY is not configured in the backend environment. "
+                "Here are the grounded document excerpts retrieved for your query:\n\n" + context
+            )
+            return {
+                "answer": answer_text,
+                "sources": sources,
+                "latency_ms": 0,
+                "model": "retrieval-fallback",
+                "query": query,
+            }
+
+        t0 = time.monotonic()
+
+        response = self._client.chat.completions.create(
+            model=self._cfg["groq_model"],
+            messages=[{"role": "system", "content": system_prompt}] + messages,
+            max_tokens=self._cfg["max_tokens"],
+            temperature=self._cfg["temperature"],
+        )
+        answer_text = response.choices[0].message.content.strip()
+        latency_ms = int((time.monotonic() - t0) * 1000)
 
         return {
             "answer": answer_text,

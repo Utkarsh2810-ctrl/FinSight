@@ -105,6 +105,20 @@ class HybridRetriever:
         self._bm25_store[document_id] = (BM25Okapi(tokenized), chunks)
         logger.info(f"BM25 index built for document_id={document_id} ({len(chunks)} chunks)")
 
+    def delete_document(self, document_id: str) -> None:
+        """
+        Deletes all chunks for a document from ChromaDB and BM25 store.
+        """
+        try:
+            self._collection.delete(where={"document_id": document_id})
+            logger.info(f"Deleted ChromaDB chunks for document_id={document_id}")
+        except Exception as e:
+            logger.error(f"Error deleting ChromaDB chunks for document_id={document_id}: {e}")
+
+        if document_id in self._bm25_store:
+            del self._bm25_store[document_id]
+            logger.info(f"Deleted BM25 index for document_id={document_id}")
+
     # ------------------------------------------------------------------
     # Dense retrieval
     # ------------------------------------------------------------------

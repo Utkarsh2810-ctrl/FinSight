@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+const AUTH_URL = import.meta.env.VITE_AUTH_URL || 'http://localhost:8080';
+
 const AuthPage = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('login');
@@ -30,7 +32,7 @@ const AuthPage = () => {
         ? { name: form.name, email: form.email, password: form.password }
         : { email: form.email, password: form.password };
 
-      const response = await axios.post(`http://localhost:8080${endpoint}`, payload, {
+      const response = await axios.post(`${AUTH_URL}${endpoint}`, payload, {
         headers: { 'Content-Type': 'application/json' }
       });
 
